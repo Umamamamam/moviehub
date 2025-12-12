@@ -8,9 +8,8 @@ const app =  express()
 
 const api = process.env.API_KEY
 const mongoURI = process.env.MONGODB_URI
-mongoose.connect(
-`${mongoURI}`
-)
+mongoose.connect(mongoURI)
+
 .then(() => {
     console.log("MongoDB Successfully connected")
 })
